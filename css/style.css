@@ -1,0 +1,196 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 30px 0 0;
+  padding: 0%;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+section {
+  padding: 45px;
+}
+
+.about {
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  width: 100%;
+  transition: 2s;
+}
+
+.images img {
+  width: 100%;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+#slide-1:target ~ .images {
+  margin-left: 0px;
+}
+
+#slide-2:target ~ .images {
+  margin-left: -100%;
+}
+
+#slide-3:target ~ .images {
+  margin-left: -200%;
+}
+
+.navigation a {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: #dedede;
+  font-size: 0px;
+  border-radius: 50%;
+  margin: 2px;
+  transition: 1s;
+}
+
+.navigation a:hover {
+  background-color: #666;
+}
+
+.navigation {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+form {
+  text-align: left;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 10px 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="Telephone"],
+textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: justify;
+  resize: vertical;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #555;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  height: 70px;
+}
+
+.gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: red;
+  bottom: 40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+
+.icon a {
+  color: #666;
+  position: relative;
+  top: 70px;
+  left: 50px;
+}
+
+.fa-brands {
+  font-weight: 400;
+  font-size: 35px;
+}
+
+/* product card */
